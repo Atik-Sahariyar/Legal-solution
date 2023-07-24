@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Crimson  google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
+
+    <!--tailwind custom colors-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!--font awesame-->
+    <script src="https://kit.fontawesome.com/422ce745cd.js" crossorigin="anonymous"></script>
+
+    <!--internal css styles-->
+    <style>
+        .font-crimson {
+            font-family: 'Crimson Text', serif;
+        }
+        .common-color{
+            background-color: #B68C5A;
+            border: none;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+    <header>
+        <!--Navbar section-->
+        <section class="ml-5 mr-5 md:ml-12 md:mr-12 lg:ml-36 lg:mr-36">
+            <nav class="my-6  ">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3">
+                    <div class="flex items-center md:gap-3 lg:gap-5">
+                        <img src="./images/business.png" class="" alt="">
+                        <h1 class="text-4xl font-bold">Justice</h1>
+                    </div>
+
+                    <div class="flex md:gap-4 lg:gap-7"> 
+                        
+                            <li class="flex md:gap-1 lg:gap-3 items-center">Home</li>
+                            <li class="flex md:gap-1 lg:gap-3 items-center">Services <i class="fa-solid fa-chevron-right"></i></li>
+                            <li class="flex md:gap-1 lg:gap-3 items-center">Cases <i class="fa-solid fa-chevron-right"></i></li>
+                            <li class="flex md:gap-1 lg:gap-3 items-center">Blog <i class="fa-solid fa-chevron-right"></i></li>
+                            <li class="flex md:gap-1 lg:gap-3 items-center "><span class="w-20">Contact Us </span><i class="fa-solid fa-chevron-right"></i></li>
+                        
+                    </div>
+                    <div class="flex md:mt-3 lg:justify-end">
+                        <button class="btn common-color text-white">Free Consultation</button>
+                    </div>
+                </div>
+
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+         <!--abnner section-->
+         <section class="ml-5 mr-5 md:ml-12 md:mr-12 lg:ml-36 lg:mr-36">
+            <div class="card w-[100%] h-[450px] bg-base-100 shadow-xl image-full">
+                <figure><img src="./images/banner.png" alt="Shoes" class="w-[100%]"/></figure>
+                <div class="card-body flex justify-center items-center">
+                    <div class=" text-white  ">
+                        <h1 class="text-center text-5xl font-extrabold my-5">We Provide Effective <br>
+                          Legal Solutions</h1>
+                        <p class="max-w-lg text-center">There are many variations of passages of Lorem Ipsum available, but the majority
+                              have suffered alteration in some form, by injected humour</p>
+                        <input type="text" placeholder="Search your services" class="mt-20  p-[10px] w-[350px] rounded-lg mr-9">
+                        <button class="btn common-color text-white w-[100px]"><span class="lowercase"><span class="uppercase">S</span>earch</span></button>
+                      </div>
+                </div>
+            </div>
+         </section>
+    </main>
+
+
+    <footer>
+
+
+    </footer>
+
 </body>
+
 </html>
